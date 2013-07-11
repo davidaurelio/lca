@@ -10,11 +10,11 @@
 #import <AudioToolbox/AudioFile.h>
 #import <libgen.h>
 
-int main(int argc, const char * argv[]) {
+int main(int argc, char *argv[]) {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     
     if (argc != 2) {
-        printf("Usage: %s path/to/audio/file", basename((char*) argv[0]));
+        printf("Usage: %s path/to/audio/file", basename(argv[0]));
         return -1;
     }
     
